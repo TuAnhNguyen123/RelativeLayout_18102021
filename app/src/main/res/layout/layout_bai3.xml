@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:textColor="#FAFBFB"
+        android:background="#EF1808"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/textView1"
+        android:text="Top Content Here"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:textColor="#FAFBFB"
+        android:background="#7D8C8B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/textView2"
+        android:text="Bottom Content Here"/>
+    <LinearLayout
+        android:layout_below="@+id/textView1"
+        android:layout_above="@+id/textView2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#FAFBFB"
+            android:background="#AADA73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/textViewFirst"
+            android:text="First"/>
+        <TextView
+            android:layout_margin="20dp"
+            android:textColor="#FAFBFB"
+            android:background="#2196F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/textViewSecond"
+            android:text="Second"/>
+        <TextView
+            android:textColor="#FAFBFB"
+            android:background="#FFC107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/textViewThird"
+            android:text="Third"/>
+    </LinearLayout>
+</RelativeLayout>
